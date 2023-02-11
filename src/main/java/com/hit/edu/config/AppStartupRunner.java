@@ -18,7 +18,7 @@ public class AppStartupRunner implements ApplicationRunner {
     // 应用启动加载参数配置
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        log.info("ApplicationRunner参数名称：{}", args.getOptionNames());
+        log.info("ApplicationRunner参数名称1：{}", args.getOptionNames());
         log.info("ApplicationRunner参数值：{}", args.getOptionValues("age"));
         log.info("ApplicationRunner参数：{}", Arrays.toString(args.getSourceArgs()));
     }
