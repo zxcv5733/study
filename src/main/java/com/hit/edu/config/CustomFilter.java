@@ -22,7 +22,6 @@ public class CustomFilter implements Filter {
 
         log.info("customFilter 请求处理之前----doFilter方法之前过滤请求");
         servletRequest.setCharacterEncoding("UTF-8");
-        log.info("添加测试");
         filterChain.doFilter(servletRequest, servletResponse);
         servletResponse.setCharacterEncoding("UTF-8");
         log.info("customFilter 请求处理之后----doFilter方法之后处理响应");
